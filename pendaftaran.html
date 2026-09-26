@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran - Seminar & Workshop Web Development</title>
+    <style>
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header-title h1 {
+            margin: 0;
+        }
+
+        .header-title p {
+            margin: 5px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <figure style="margin: 0;">
+                <img src="logo uhw.png" alt="Logo UHW Perbanas" width="85">
+            </figure>
+            <div class="header-title">
+                <h1>Pendaftaran Kegiatan Kampus UHW Perbanas</h1>
+                <p>Pengembangan Skill Mahasiswa Era Digital</p>
+            </div>
+        </div>
+    </header>
+
+    <br>
+
+    <nav>
+        <a href="index.html">Deskripsi Kegiatan</a> | 
+        <a href="jadwal.html">Jadwal Acara</a> | 
+        <a href="pendaftaran.html">Formulir Pendaftaran</a> | 
+        <a href="https://www.perbanas.ac.id" target="_blank" rel="noopener noreferrer">Website UHW Perbanas (Eksternal)</a>
+    </nav>
+
+    <br><hr><br>
+
+    <main>
+        <section id="formulir">
+            <h2>Formulir Pendaftaran Kegiatan</h2>
+
+            <form action="#" method="post">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" required><br><br>
+
+                <label for="nim">NIM:</label><br>
+                <input type="number" id="nim" name="nim" required><br><br>
+
+                <label for="email">Alamat Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telepon">Nomor Telepon / WhatsApp:</label><br>
+                <input type="tel" id="telepon" name="telepon" required><br><br>
+
+                <label for="prodi">Program Studi:</label><br>
+                <select id="prodi" name="prodi" required>
+                    <option value="">-- Pilih Program Studi --</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Akuntansi">Akuntansi</option>
+                    <option value="Manajemen">Manajemen</option>
+                </select><br><br>
+
+                <fieldset>
+                    <legend>Jenis Kelamin</legend>
+                    <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki-laki">Laki-laki</label><br>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Pilihan Sesi Kegiatan</legend>
+                    <input type="checkbox" id="sesi1" name="sesi[]" value="Seminar Pagi">
+                    <label for="sesi1">Sesi 1: Seminar Pagi</label><br>
+                    <input type="checkbox" id="sesi2" name="sesi[]" value="Workshop Siang">
+                    <label for="sesi2">Sesi 2: Workshop Siang</label>
+                </fieldset><br>
+
+                <label for="alasan">Alasan Mengikuti Kegiatan:</label><br>
+                <textarea id="alasan" name="alasan" rows="4" cols="40" placeholder="Tuliskan alasan Anda..." required></textarea><br><br>
+
+                <input type="checkbox" id="setuju" name="setuju" required>
+                <label for="setuju">Saya menyetujui seluruh ketentuan dan aturan kegiatan yang berlaku.</label><br><br>
+
+                <button type="submit">Kirim Pendaftaran</button>
+            </form>
+        </section>
+    </main>
+
+    <br><hr><br>
+
+    <footer>
+        <p>&copy; 2026 Panitia Kegiatan Mahasiswa UHW Perbanas.</p>
+        <p>Kontak Panitia: <a href="mailto:heri.supriyanto@hayamwuruk.ac.id">heri.supriyanto@hayamwuruk.ac.id</a> | <a href="tel:+623112345678">+62 31 12345678</a></p>
+    </footer>
+
+</body>
+</html>
